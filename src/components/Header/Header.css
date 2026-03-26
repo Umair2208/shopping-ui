@@ -1,0 +1,284 @@
+.topBar {
+  background: #23355d;
+  font-size: 12px;
+  padding: 0px 100px;
+  color: #ddd;
+}
+
+.topBarRight {
+  display: flex;
+  gap: 40px;
+}
+
+.topBarContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.mainHeader {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+  background: #fff;
+  grid-template-columns: auto 55% auto;
+}
+
+.logoDesk {
+  width: 240px;
+  height: auto;
+}
+
+.searchBox {
+  margin: 0 20px;
+  position: relative;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 0px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  font-size: 14px;
+}
+
+.searchBox input::placeholder {
+  color: #8d8d8d;
+}
+
+.searchBox svg {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #747474;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons .icon {
+  position: relative;
+  border: 1px solid #cbcbcb;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-radius: 5px;
+  color: #747474;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.icons .icon .count {
+  background: #ef772a;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 1px 5px;
+  top: -10px;
+  right: -6px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.nav {
+  background: #fff;
+  border-top: 1px solid #cbcbcb;
+  padding: 0px 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navItem {
+  position: relative;
+  cursor: pointer;
+}
+
+.navItem span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: fit-content;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.dropdownItem {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #444;
+}
+
+.dropdownItem:hover {
+  background: #f7f7f7;
+}
+
+.navItem:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menuIcon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  transition: 0.3s ease;
+  padding: 20px;
+}
+
+.mobileMenu.show {
+  right: 0;
+}
+
+.mobileHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mobileHeader button {
+  border: 0px;
+  background: transparent;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.mobileItem {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.mobileItemHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.mobileDropdown {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.mobileDropdown div {
+  padding: 6px 0;
+  color: #555;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+  .topBar {
+    padding: 0px 70px;
+  }
+  .logoDesk {
+    width: 200px;
+  }
+  .mainHeader {
+    padding: 20px 70px;
+    grid-template-columns: auto 50% auto;
+  }
+
+  .nav {
+    padding: 0px 70px;
+  }
+
+  .navbar {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .mainHeader .searchBox {
+    display: none;
+  }
+
+  .topBar {
+    display: none;
+  }
+
+  .mainHeader {
+    grid-template-columns: auto auto;
+    padding: 20px;
+  }
+
+  .mainHeader .icons {
+    display: none;
+  }
+
+  .logoDesk {
+    width: 220px;
+  }
+
+  .mobileMenu .searchBox {
+    margin: 0px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .mobileMenu .icons {
+    margin-top: 20px;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoDesk {
+    width: 200px;
+  }
+  .mobileMenu {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .logoDesk {
+    width: 180px;
+  }
+}

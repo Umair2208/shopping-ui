@@ -1,0 +1,119 @@
+.testimonialSection {
+  background: #f3f3f3;
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.testimonialSection h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #203054;
+  margin-bottom: 40px;
+}
+
+.testimonialSection .testimonialBox {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonialSection .quoteIcon {
+  margin: 0 auto 40px;
+}
+
+.testimonialSection .quoteIcon img {
+  width: 80px;
+}
+
+.testimonialSection .testimonialText {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #747474;
+  margin-bottom: 40px;
+}
+
+.testimonialSection .author {
+  color: #ef772a;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.testimonialSection .dots {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.testimonialSection .dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonialSection .dot.active {
+  background: #ef772a;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+  .testimonialSection {
+    padding: 50px 70px;
+  }
+  .testimonialSection h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonialSection {
+    padding: 40px 60px;
+  }
+  .testimonialSection h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .testimonialSection .quoteIcon {
+    margin: 0 auto 30px;
+  }
+  .testimonialSection .testimonialText {
+    margin-bottom: 30px;
+  }
+  .testimonialSection .author {
+    margin-bottom: 30px;
+  }
+  .testimonialSection .dots {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonialSection {
+    padding: 40px 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonialSection h2 {
+    margin-bottom: 20px;
+  }
+  .testimonialSection {
+    padding: 20px;
+  }
+  .testimonialSection .quoteIcon {
+    margin: 0 auto 20px;
+  }
+  .testimonialSection .testimonialText {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .testimonialSection .author {
+    margin-bottom: 20px;
+  }
+  .testimonialSection .dots {
+    gap: 25px;
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "title": "Travel Steamer & Iron",
+    "price": 29.99,
+    "productId": "TA-71",
+    "image": "img1"
+  },
+  {
+    "id": 2,
+    "title": "Stadium Crossbody Sling Bag",
+    "price": 9.0,
+    "productId": "TA-71",
+    "image": "img2"
+  },
+  {
+    "id": 3,
+    "title": "Neo Light Zero Neopreme",
+    "price": 25.9,
+    "productId": "CS-122",
+    "image": "img3",
+    "tag": "Best Seller",
+    "bg": "#ef772a"
+  },
+  {
+    "id": 4,
+    "title": "Ballista -- Sling Bag",
+    "price": 16.5,
+    "productId": "TA-71",
+    "image": "img4"
+  },
+  {
+    "id": 5,
+    "title": "Travel Steamer & Iron",
+    "price": 29.99,
+    "productId": "TA-71",
+    "image": "img5",
+    "tag": "Vibraprint",
+    "bg": "#23355d"
+  },
+  {
+    "id": 6,
+    "title": "Waterproof Bluetooth Speaker",
+    "price": 36.39,
+    "productId": "TA-71",
+    "image": "img6"
+  },
+  {
+    "id": 7,
+    "title": "Travel Steamer & Iron",
+    "price": 29.99,
+    "productId": "TA-71",
+    "image": "img7",
+    "tag": "Vastlaser",
+    "bg": "#747474"
+  },
+  {
+    "id": 8,
+    "title": "Journal with Light Up Logo Display",
+    "price": 19.5,
+    "productId": "TA-71",
+    "image": "img8"
+  }
+]

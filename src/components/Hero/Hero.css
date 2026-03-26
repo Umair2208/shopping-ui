@@ -1,0 +1,166 @@
+.hero {
+  overflow: hidden;
+}
+.hero .carousel {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hero .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.hero .slide.active {
+  opacity: 1;
+}
+
+.hero .slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.hero .overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 150px;
+}
+
+.hero .overlay h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero .overlay p {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.hero .overlay button {
+  background: #ef772a;
+  border: none;
+  padding: 15px 22px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero .dots {
+  position: absolute;
+  bottom: 90px;
+  left: 150px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero .dot {
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hero .dot.active {
+  background: #fff;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+  .hero .overlay {
+    padding-left: 100px;
+  }
+  .hero .dots {
+    bottom: 100px;
+    left: 100px;
+  }
+  .hero .overlay h1 {
+    font-size: 50px;
+  }
+  .hero .overlay p {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero .overlay {
+    padding-left: 70px;
+  }
+  .hero .dots {
+    bottom: 65px;
+    left: 70px;
+  }
+  .hero .overlay h1 {
+    font-size: 40px;
+  }
+  .hero .overlay p {
+    font-size: 30px;
+  }
+  .hero .carousel {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .overlay {
+    padding-left: 50px;
+  }
+  .hero .dots {
+    bottom: 50px;
+    left: 50px;
+  }
+  .hero .overlay h1 {
+    font-size: 35px;
+  }
+  .hero .overlay p {
+    font-size: 25px;
+  }
+  .hero .carousel {
+    height: 300px;
+  }
+
+  .hero .overlay button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .overlay {
+    padding-left: 20px;
+  }
+  .hero .dots {
+    bottom: 60px;
+    left: 20px;
+  }
+  .hero .overlay h1 {
+    font-size: 30px;
+  }
+  .hero .overlay p {
+    font-size: 20px;
+  }
+  .hero .carousel {
+    height: 300px;
+  }
+
+  .hero .overlay button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

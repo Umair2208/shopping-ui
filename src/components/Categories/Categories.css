@@ -1,0 +1,158 @@
+.category .categorySection {
+  background: #fff;
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.category .categorySection h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #203054;
+  margin-bottom: 50px;
+}
+
+.category .carousel {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.category .card {
+  width: 100%;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #ddd;
+}
+
+.category .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category .label {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 15px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.category .controls {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.category .controls button {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #747474;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category .controls button:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+.category .controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+  .category .categorySection {
+    padding: 50px 70px;
+  }
+  .category .card {
+    height: 100%;
+  }
+  .category .label {
+    padding: 12px;
+    font-size: 12px;
+  }
+  .category .categorySection h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category .categorySection h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .category .controls {
+    margin-top: 30px;
+  }
+  .category .categorySection {
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category .categorySection h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .category .categorySection {
+    padding: 40px 45px;
+  }
+
+  .category .controls button {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .category .controls {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .category .label {
+    font-size: 10px;
+  }
+  .category .carousel {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category .carousel {
+    gap: 15px;
+  }
+  .category .categorySection {
+    padding: 20px;
+  }
+  .category .categorySection h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .category .controls {
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .category .label {
+    padding: 8px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,66 @@
+.videoWrap {
+  width: 100%;
+  padding: 60px 100px;
+}
+
+.videoWrap .heroImage {
+  position: relative;
+  width: 100%;
+}
+
+.videoWrap .heroImage img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.videoWrap .playButton {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.videoWrap .playButton svg {
+  font-size: 25px;
+}
+
+.videoWrap .circle {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+  .videoWrap {
+    padding: 50px 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .videoWrap {
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .videoWrap {
+    padding: 40px 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .videoWrap {
+    padding: 20px;
+  }
+}
